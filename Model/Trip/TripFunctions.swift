@@ -13,12 +13,18 @@ class TripFuncs{
         
     }
     
-    static func readTrip(){
-        if Data.tripModels.isEmpty{
-            Data.tripModels.append(TripModel(title: "Trip to Bali!"))
-            Data.tripModels.append(TripModel(title: "Mexico"))
-            Data.tripModels.append(TripModel(title: "Trip to Russia"))
+    static func readTrip(completion: @escaping () -> ()){
+        DispatchQueue.global(qos: .userInteractive).async {
+            if Data.tripModels.isEmpty{
+                Data.tripModels.append(TripModel(title: "Trip to Bali!"))
+                Data.tripModels.append(TripModel(title: "Mexico"))
+                Data.tripModels.append(TripModel(title: "Trip to Russia"))
+            }
         }
+        DispatchQueue.main.async {
+            completion()
+        }
+       
     }
     
     static func updateTrip(tripModel: TripModel){
