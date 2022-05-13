@@ -13,11 +13,17 @@ class TableViewCell: UITableViewCell {
         super.awakeFromNib()
         cardView.layer.shadowOpacity = 1
         cardView.layer.shadowOffset = CGSize.zero
-        cardView.layer.shadowColor = UIColor.darkGray.cgColor  
+        cardView.layer.shadowColor = UIColor.darkGray.cgColor
+        cardView.layer.cornerRadius = 15
         
     }
 
     @IBOutlet var cardView: UIView!
     @IBOutlet var titleLabel: UILabel!
+    
+    public func setup(tripModel: TripModel){
+        titleLabel.text = tripModel.title
+        
+    }
     
 }

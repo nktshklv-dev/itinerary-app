@@ -35,7 +35,7 @@
                                                             <rect key="frame" x="8" y="25" width="358" height="88"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -51,6 +51,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="Y6W-OH-hqX" id="ypt-1Z-y4B"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="k7O-UQ-hMr"/>
                                 </connections>
                             </tableView>
                         </subviews>

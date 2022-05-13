@@ -8,11 +8,10 @@
 import UIKit
 
 class TripsViewController: UIViewController {
-   
     
-
-  
+    
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         TripFuncs.readTrip { [weak self] in
@@ -28,21 +27,26 @@ extension TripsViewController: UITableViewDataSource{
 
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         var cell: UITableViewCell
-         if let reusedCell = tableView.dequeueReusableCell(withIdentifier: "MyCell"){
+         var cell: TableViewCell
+         if let reusedCell = tableView.dequeueReusableCell(withIdentifier: "MyCell") as? TableViewCell {
              cell = reusedCell
          }
          else{
-             cell = UITableViewCell(style: .default, reuseIdentifier: "MyCell")
+             cell = TableViewCell(style: .default, reuseIdentifier: "MyCell")
          }
          updateStyle(&cell, indexPath: indexPath)
          return cell
     }
     
-    func updateStyle(_ cell: inout UITableViewCell, indexPath: IndexPath){
-        var style = cell.defaultContentConfiguration()
-        style.text = Data.tripModels[indexPath.row].title
-        cell.contentConfiguration = style
+    func updateStyle(_ cell: inout TableViewCell, indexPath: IndexPath){
+        cell.setup(tripModel: Data.tripModels[indexPath.row])
     }
 }
 
+
+extension TripsViewController: UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 160
+    }
+}
