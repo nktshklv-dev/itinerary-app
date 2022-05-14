@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		11252825282FA70400ED314F /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11252824282FA70400ED314F /* UIViewExtensions.swift */; };
+		11252828282FAA0800ED314F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11252827282FAA0800ED314F /* Theme.swift */; };
+		1125282A282FAAF700ED314F /* FugazOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11252829282FAAF700ED314F /* FugazOne-Regular.ttf */; };
+		1125282C282FF3DC00ED314F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1125282B282FF3DC00ED314F /* Colors.xcassets */; };
 		116681D32821D92900AC6389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116681D22821D92900AC6389 /* AppDelegate.swift */; };
 		116681D52821D92900AC6389 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116681D42821D92900AC6389 /* SceneDelegate.swift */; };
 		116681DC2821D92A00AC6389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116681DB2821D92A00AC6389 /* Assets.xcassets */; };
@@ -22,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		11252824282FA70400ED314F /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		11252827282FAA0800ED314F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		11252829282FAAF700ED314F /* FugazOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FugazOne-Regular.ttf"; sourceTree = "<group>"; };
+		1125282B282FF3DC00ED314F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		116681CF2821D92900AC6389 /* Itinerary App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Itinerary App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		116681D22821D92900AC6389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		116681D42821D92900AC6389 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,11 +61,19 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		11252826282FA9EC00ED314F /* Resources  */ = {
+			isa = PBXGroup;
+			children = (
+				11252829282FAAF700ED314F /* FugazOne-Regular.ttf */,
+				11252827282FAA0800ED314F /* Theme.swift */,
+				1125282B282FF3DC00ED314F /* Colors.xcassets */,
+			);
+			path = "Resources ";
+			sourceTree = "<group>";
+		};
 		116681C62821D92900AC6389 = {
 			isa = PBXGroup;
 			children = (
-				11252823282FA6D200ED314F /* Extensions */,
-				11C46F052827194B000508B9 /* Model */,
 				116681D12821D92900AC6389 /* Itinerary App */,
 				116681D02821D92900AC6389 /* Products */,
 			);
@@ -76,6 +90,9 @@
 		116681D12821D92900AC6389 /* Itinerary App */ = {
 			isa = PBXGroup;
 			children = (
+				11252826282FA9EC00ED314F /* Resources  */,
+				11252823282FA6D200ED314F /* Extensions */,
+				11C46F052827194B000508B9 /* Model */,
 				11F32522282EF05D009A111D /* Views */,
 				116681D22821D92900AC6389 /* AppDelegate.swift */,
 				116681D42821D92900AC6389 /* SceneDelegate.swift */,
@@ -180,8 +197,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1125282C282FF3DC00ED314F /* Colors.xcassets in Resources */,
 				116681DF2821D92A00AC6389 /* LaunchScreen.storyboard in Resources */,
 				11F32525282EF0B2009A111D /* TripsViewController.storyboard in Resources */,
+				1125282A282FAAF700ED314F /* FugazOne-Regular.ttf in Resources */,
 				116681DC2821D92A00AC6389 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11252828282FAA0800ED314F /* Theme.swift in Sources */,
 				116681D32821D92900AC6389 /* AppDelegate.swift in Sources */,
 				11C46F0C28271EB0000508B9 /* Data.swift in Sources */,
 				11252825282FA70400ED314F /* UIViewExtensions.swift in Sources */,

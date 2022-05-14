@@ -12,6 +12,8 @@ class TableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         cardView.addShadowAndRoundedCorners()
+        cardView.backgroundColor = Theme.accent
+       
         
     }
 
