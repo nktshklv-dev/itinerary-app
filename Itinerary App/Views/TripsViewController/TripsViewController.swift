@@ -20,6 +20,8 @@ class TripsViewController: UIViewController {
     }
 }
 
+
+
 extension TripsViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Data.tripModels.count
