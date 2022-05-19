@@ -82,7 +82,7 @@
     </scenes>
     <resources>
         <namedColor name="Accent">
-            <color red="0.1725490093" green="0.29803922770000002" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.17299999296665192" green="0.29800000786781311" blue="0.43500000238418579" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
