@@ -11,6 +11,7 @@
 		11252828282FAA0800ED314F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11252827282FAA0800ED314F /* Theme.swift */; };
 		1125282A282FAAF700ED314F /* FugazOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11252829282FAAF700ED314F /* FugazOne-Regular.ttf */; };
 		1125282C282FF3DC00ED314F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1125282B282FF3DC00ED314F /* Colors.xcassets */; };
+		1127DE552836E146003E35B6 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1127DE542836E146003E35B6 /* UIButtonExtensions.swift */; };
 		116681D32821D92900AC6389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116681D22821D92900AC6389 /* AppDelegate.swift */; };
 		116681D52821D92900AC6389 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116681D42821D92900AC6389 /* SceneDelegate.swift */; };
 		116681DC2821D92A00AC6389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116681DB2821D92A00AC6389 /* Assets.xcassets */; };
@@ -28,10 +29,11 @@
 		11252827282FAA0800ED314F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		11252829282FAAF700ED314F /* FugazOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FugazOne-Regular.ttf"; sourceTree = "<group>"; };
 		1125282B282FF3DC00ED314F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		1127DE542836E146003E35B6 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 		116681CF2821D92900AC6389 /* Itinerary App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Itinerary App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		116681D22821D92900AC6389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		116681D42821D92900AC6389 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		116681DB2821D92A00AC6389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		116681DB2821D92A00AC6389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "/Users/nikita/Desktop/Prog/Itinerary App/Itinerary App/Assets.xcassets"; sourceTree = "<absolute>"; };
 		116681DE2821D92A00AC6389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		116681E02821D92A00AC6389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11C46F0728271974000508B9 /* TripModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripModel.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				11252824282FA70400ED314F /* UIViewExtensions.swift */,
+				1127DE542836E146003E35B6 /* UIButtonExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				11C46F0C28271EB0000508B9 /* Data.swift in Sources */,
 				11252825282FA70400ED314F /* UIViewExtensions.swift in Sources */,
 				116681D52821D92900AC6389 /* SceneDelegate.swift in Sources */,
+				1127DE552836E146003E35B6 /* UIButtonExtensions.swift in Sources */,
 				11F32527282EF0BE009A111D /* TripsViewController.swift in Sources */,
 				11C46F0A28271981000508B9 /* TripFunctions.swift in Sources */,
 				11F3252B282EFCBD009A111D /* TableViewCell.swift in Sources */,
