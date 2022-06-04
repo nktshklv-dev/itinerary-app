@@ -103,11 +103,10 @@
 		116681D12821D92900AC6389 /* Itinerary App */ = {
 			isa = PBXGroup;
 			children = (
-				11F27A24284A1EE00004F8FB /* AddTripVC */,
 				11252826282FA9EC00ED314F /* Resources  */,
+				11F32523282EF071009A111D /* TripsViewController */,
+				11F27A24284A1EE00004F8FB /* AddTripVC */,
 				11C46F052827194B000508B9 /* Model */,
-				11F32522282EF05D009A111D /* Views */,
-				11F32524282EF0B2009A111D /* TripsViewController.storyboard */,
 				116681D22821D92900AC6389 /* AppDelegate.swift */,
 				116681D42821D92900AC6389 /* SceneDelegate.swift */,
 				116681DB2821D92A00AC6389 /* Assets.xcassets */,
@@ -153,17 +152,10 @@
 			path = CustomControls;
 			sourceTree = "<group>";
 		};
-		11F32522282EF05D009A111D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				11F32523282EF071009A111D /* TripsViewController */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		11F32523282EF071009A111D /* TripsViewController */ = {
 			isa = PBXGroup;
 			children = (
+				11F32524282EF0B2009A111D /* TripsViewController.storyboard */,
 				11F32526282EF0BE009A111D /* TripsViewController.swift */,
 				11F3252A282EFCBD009A111D /* TableViewCell.swift */,
 			);
