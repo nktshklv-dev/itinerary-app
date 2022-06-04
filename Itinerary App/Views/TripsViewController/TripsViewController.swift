@@ -55,4 +55,17 @@ extension TripsViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 160
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toAddTrip"{
+            let popup = segue.destination as! AddTripVc
+            
+            popup.doAfterDoneSaving = { [weak self] in
+                self?.tableView.reloadData()
+            }
+        }
+    }
 }
+
+
+

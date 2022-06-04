@@ -9,7 +9,7 @@ import UIKit
 
 class AddTripVc: UIViewController {
 
-  
+    var doAfterDoneSaving: (() -> Void)?
 
     
 
@@ -23,6 +23,11 @@ class AddTripVc: UIViewController {
     
     
     @IBAction func save(_ sender: Any) {
+        TripFuncs.createTrip(tripModel: TripModel(title: tripTextField.text ?? "New Trip"))
+        if let doAfterDoneSaving = doAfterDoneSaving{
+            doAfterDoneSaving()
+        }
+        dismiss(animated: true)
     }
     
     

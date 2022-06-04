@@ -70,7 +70,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="H0W-C1-ifM" kind="presentation" id="NyJ-H9-lAw"/>
+                                    <segue destination="H0W-C1-ifM" kind="presentation" identifier="toAddTrip" id="NyJ-H9-lAw"/>
                                 </connections>
                             </button>
                         </subviews>
